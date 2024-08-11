@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'by.trofimov.hibernate'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation 'org.hibernate:hibernate-core:6.3.2.Final'
+    runtimeOnly 'org.postgresql:postgresql:42.7.3'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+}
